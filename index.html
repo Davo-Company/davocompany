@@ -9,7 +9,7 @@
 	<meta name="description" content="This theme is extremely powerful, full of sweetness, neat and clean design for those whose eyes is looking for fashion theme. It is fully stylish and present in elegant manner." />
 	<meta property="og:title" content="Winkit - Multipurpose Responsive Template" />
 	<meta property="og:description" content="This theme is extremely powerful, full of sweetness, neat and clean design for those whose eyes is looking for fashion theme. It is fully stylish and present in elegant manner." />
-	<meta property="og:image" content="http://winkit.dexignlab.com/20_electrician/social-image.png" />
+	<meta property="og:image" content="images/logo.png" />
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Electrician - Multi Purpose Html Template</title>
+	<title>Davo Company - Desenvolvimento Mobile</title>
 
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +34,49 @@
 	<link class="skin"  rel="stylesheet" type="text/css" href="css/skin/skin.css">
 	<link  rel="stylesheet" type="text/css" href="css/templete.css">
 	<style>
+									/* Themed Green for Titles and Primary Text */
+									.dlab-tilte,
+									.text-primary,
+									.dlab-tilte.text-primary {
+										color: var(--davo-primary-accent) !important;
+									}
+							/* Slider Overlay Shadow and Blur for Text Visibility */
+							.rev-slider-overlay {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								z-index: 2;
+								pointer-events: none;
+								background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
+								box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+								backdrop-filter: blur(2.5px);
+								-webkit-backdrop-filter: blur(2.5px);
+								border-radius: 0;
+							}
+							.rev_slider li {
+								position: relative;
+							}
+					/* Slider Overlay Shadow and Blur for Text Visibility (image only) */
+					.rev_slider .rev-slidebg {
+						position: relative;
+					}
+					.rev_slider .rev-slidebg::after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						z-index: 2;
+						pointer-events: none;
+						background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
+						box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+						backdrop-filter: blur(2.5px);
+						-webkit-backdrop-filter: blur(2.5px);
+						border-radius: 0;
+					}
 			.site-footer .footer-bottom {
 				background-color: var(--davo-primary-dark) !important;
 			}
@@ -238,9 +281,10 @@
 					<!-- START REVOLUTION SLIDER 5.4.7.2 fullscreen mode -->
 						<div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7.2">
 					<ul>	<!-- SLIDE  -->
-						<li data-index="rs-100" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-							<!-- MAIN IMAGE -->
-							<img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/main-slider/slide1.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+						   <li data-index="rs-100" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+							   <div class="rev-slider-overlay"></div>
+							   <!-- MAIN IMAGE -->
+							   <img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/main-slider/slide1.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption tp-shape tp-shapewrapper ov-tp " 
 								id="slide-100-layer-1" 
@@ -307,162 +351,6 @@
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Barlow Condensed',sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 							</div>
-							<!-- LAYER NR. 5 -->
-							<a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink" 
-								href="#" target="_blank"			 
-								id="slide-100-layer-5" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','','20']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['140','140','80','70']" 
-								data-lineheight="['18','18','18','18']"
-								data-whitespace="nowrap"
-								data-type="button" 
-								data-actions=''
-								data-responsive_offset="off" 
-								data-responsive="off"
-								
-								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[15,15,15,10]"
-								data-paddingright="[30,30,30,20]"
-								data-paddingbottom="[15,15,15,10]"
-								data-paddingleft="[30,30,30,20]"
-
-								style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); font-family:rubik; background-color:#ffb700; text-transform: uppercase;"> learn more </a>
-
-							<!-- LAYER NR. 5 -->
-							<a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink" 
-								href="#" target="_blank"			 
-								id="slide-100-layer-6"  
-								data-x="['left','left','left','left']" data-hoffset="['175','175','175','170']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['140','140','80','70']"  
-								data-lineheight="['18','18','18','18']"
-								data-whitespace="nowrap"
-								data-type="button" 
-								data-actions=''
-								data-responsive_offset="off" 
-								data-responsive="off"
-								
-								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[15,15,15,10]"
-								data-paddingright="[30,30,30,20]"
-								data-paddingbottom="[15,15,15,10]"
-								data-paddingleft="[30,30,30,20]"
-
-								style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); font-family:rubik; background-color:#ffb700; text-transform: uppercase;"> Our Services </a>
-						</li>
-						<li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-							<!-- MAIN IMAGE -->
-							<img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/main-slider/slide2.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
-							<div class="tp-caption tp-shape tp-shapewrapper ov-tp" 
-								id="slide-200-layer-1" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-								data-width="full"
-								data-height="full"
-								data-whitespace="nowrap"
-								data-type="shape" 
-								data-basealign="slide" 
-								data-responsive_offset="off" 
-								data-responsive="off"
-								data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeIn"}]'
-								data-textAlign="['inherit','inherit','inherit','inherit']"
-								data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								style="z-index: 5;font-family: 'rubik', sans-serif;">
-							</div>
-							<!-- LAYER NR. 2 -->
-							<div class="tp-caption " 
-								id="slide-200-layer-3" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','0','20']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['-100','-100','-100','-80']" 
-								data-fontsize="['90','40','40','28']"
-								data-lineheight="['100','40','40','28']"
-								data-letterspacing="['2','2','2','2']"
-								data-width="['1000','none','768','360']"
-								data-height="none"
-								data-whitespace="['normal','nowrap','normal','normal']"
-								data-type="text" 
-								data-responsive_offset="off" 
-								data-responsive="off"
-								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-								data-textAlign="['left','left','left','left']"
-								data-paddingtop="[0,0,0,0]"
-								data-paddingright="[10,10,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 700; white-space: normal; color: #fff; font-family: 'Barlow Condensed',sans-serif;">           
-								Fast and Reliable <br/>Electrical services
-
-							</div>
-							<!-- LAYER NR. 3 -->
-							<div class="tp-caption  " 
-								id="slide-200-layer-4" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','0','20']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['50','50','-5','00']" 
-								data-fontsize="['18','18','18','18']"
-								data-lineheight="['30','30','25','22']"
-								data-width="['640','481','500','300']"
-								data-height="none"
-								data-whitespace="normal"
-					 
-								data-type="text" 
-								data-responsive_offset="off" 
-								data-responsive="off"
-								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-								data-textAlign="['left','left','left','left']"
-								data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Barlow Condensed',sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-							</div>
-							<!-- LAYER NR. 5 -->
-							<a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink" 
-								href="#" target="_blank"			 
-								id="slide-200-layer-5" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','','20']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['140','140','80','70']" 
-								data-lineheight="['18','18','18','18']"
-								data-whitespace="nowrap"
-								data-type="button" 
-								data-actions=''
-								data-responsive_offset="off" 
-								data-responsive="off"
-								
-								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[15,15,15,10]"
-								data-paddingright="[30,30,30,20]"
-								data-paddingbottom="[15,15,15,10]"
-								data-paddingleft="[30,30,30,20]"
-
-								style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); font-family:rubik; background-color:#ffb700; text-transform: uppercase;"> learn more </a>
-							<!-- LAYER NR. 5 -->
-							<a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink" 
-								href="#" target="_blank"			 
-								id="slide-200-layer-6"  
-								data-x="['left','left','left','left']" data-hoffset="['175','175','175','170']" 
-								data-y="['middle','middle','middle','middle']" data-voffset="['140','140','80','70']"  
-								data-lineheight="['18','18','18','18']"
-								data-whitespace="nowrap"
-								data-type="button" 
-								data-actions=''
-								data-responsive_offset="off" 
-								data-responsive="off"
-								
-								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[15,15,15,10]"
-								data-paddingright="[30,30,30,20]"
-								data-paddingbottom="[15,15,15,10]"
-								data-paddingleft="[30,30,30,20]"
-
-								style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); font-family:rubik; background-color:#ffb700; text-transform: uppercase;"> Our Services </a>
 						</li>
 					</ul>
 					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
@@ -478,7 +366,7 @@
 			<div class="container">
 				<div class="row dzseth margin-0">
 					<div class="col-lg-6 col-md-12 d-flex">
-						<img class="align-self-center" src="images/services-contact-img.png" alt="">
+						<img class="align-self-center" src="images/services-contact-img.jpg" alt="">
 					</div>
 					<div class="col-lg-6 col-md-12">
 						<div class="services-content">

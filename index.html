@@ -1,68 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Davo Company</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
-      margin: 0;
-      padding: 40px 16px;
-    }
-    .container {
-      max-width: 720px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .card {
-      border: 1px solid #e5e5e5;
-      border-radius: 8px;
-      padding: 24px;
-      margin-top: 24px;
-      background: #fafafa;
-    }
-    .label {
-      font-weight: 600;
-      margin-top: 12px;
-    }
-    footer {
-      margin-top: 48px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="description" content="This theme is extremely powerful, full of sweetness, neat and clean design for those whose eyes is looking for fashion theme. It is fully stylish and present in elegant manner." />
+	<meta property="og:title" content="Winkit - Multipurpose Responsive Template" />
+	<meta property="og:description" content="This theme is extremely powerful, full of sweetness, neat and clean design for those whose eyes is looking for fashion theme. It is fully stylish and present in elegant manner." />
+	<meta property="og:image" content="images/logo.png" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Davo Company - Desenvolvimento Mobile</title>
+
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link  rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css">
+	<link class="skin"  rel="stylesheet" type="text/css" href="css/skin/skin.css">
+	<link  rel="stylesheet" type="text/css" href="css/templete.css">
+	<style>
+									/* Themed Green for Titles and Primary Text */
+									.dlab-tilte,
+									.text-primary,
+									.dlab-tilte.text-primary {
+										color: var(--davo-primary-accent) !important;
+									}
+							/* Slider Overlay Shadow and Blur for Text Visibility */
+							.rev-slider-overlay {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								z-index: 2;
+								pointer-events: none;
+								background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
+								box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+								backdrop-filter: blur(2.5px);
+								-webkit-backdrop-filter: blur(2.5px);
+								border-radius: 0;
+							}
+							.rev_slider li {
+								position: relative;
+							}
+					/* Slider Overlay Shadow and Blur for Text Visibility (image only) */
+					.rev_slider .rev-slidebg {
+						position: relative;
+					}
+					.rev_slider .rev-slidebg::after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						z-index: 2;
+						pointer-events: none;
+						background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
+						box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+						backdrop-filter: blur(2.5px);
+						-webkit-backdrop-filter: blur(2.5px);
+						border-radius: 0;
+					}
+			.site-footer .footer-bottom {
+				background-color: var(--davo-primary-dark) !important;
+			}
+			/* Main Bar and Logo Header Styling */
+			.main-bar {
+				background: var(--davo-primary-dark) !important;
+				border-bottom: 2px solid var(--davo-primary-accent);
+				box-shadow: 0 2px 12px 0 rgba(0,60,60,0.08);
+			}
+			.main-bar .container {
+				background: transparent !important;
+			}
+			.logo-header {
+				background: transparent !important;
+				padding: 6px 0;
+			}
+			.logo-header img {
+				max-height: 54px;
+				filter: drop-shadow(0 2px 8px var(--davo-primary-accent));
+				background: var(--davo-primary-dark);
+				border-radius: 8px;
+				padding: 4px 10px;
+			}
+			/* Navbar Toggler (Hamburger) */
+			.navbar-toggler {
+				border: 2px solid var(--davo-primary-accent);
+				background: var(--davo-primary-dark);
+				border-radius: 6px;
+			}
+			.navbar-toggler span {
+				background: var(--davo-primary-accent) !important;
+			}
+			/* Quick Search Area */
+			.dlab-quik-search.bg-primary {
+				background: var(--davo-secondary-accent) !important;
+				border-radius: 8px;
+				box-shadow: 0 2px 8px 0 rgba(31,199,166,0.10);
+			}
+			.dlab-quik-search input.form-control {
+				background: var(--davo-primary-dark);
+				color: var(--davo-light-text);
+				border: 1px solid var(--davo-primary-accent);
+				border-radius: 4px;
+			}
+			.dlab-quik-search input.form-control::placeholder {
+				color: var(--davo-neutral-gray);
+			}
+			#quik-search-remove i, .flaticon-close {
+				color: var(--davo-primary-accent) !important;
+				font-size: 1.2em;
+				transition: color 0.2s;
+			}
+			#quik-search-remove i:hover, .flaticon-close:hover {
+				color: var(--davo-light-text) !important;
+			}
+		/* Davo Company Color Palette */
+		:root {
+			--davo-primary-dark: #003C3C;
+			--davo-primary-accent: #1FC7A6;
+			--davo-secondary-accent: #178F85;
+			--davo-light-text: #E6F2F1;
+			--davo-neutral-gray: #C9D3D3;
+		}
+
+		/* Footer Styling */
+		footer.site-footer, .footer-top {
+			background: linear-gradient(135deg, var(--davo-primary-dark), var(--davo-primary-accent));
+			color: var(--davo-light-text);
+		}
+		.footer-top h4, .footer-top .widget, .footer-top .widget a, .footer-top .widget_getintuch ul li, .footer-top .widget_services ul li a {
+			color: var(--davo-light-text) !important;
+		}
+		.footer-top .widget_services ul li a:hover {
+			color: var(--davo-primary-accent) !important;
+		}
+		.footer-logo img {
+			filter: drop-shadow(0 2px 8px var(--davo-primary-accent));
+		}
+		.footer-bottom {
+			background: var(--davo-primary-dark);
+			color: var(--davo-neutral-gray);
+			border-top: 1px solid var(--davo-secondary-accent);
+			text-align: center;
+			padding: 18px 0 12px 0;
+		}
+		.footer-bottom span {
+			color: var(--davo-neutral-gray);
+			font-size: 1.05em;
+			letter-spacing: 0.5px;
+		}
+		.site-footer .site-button {
+			background: var(--davo-primary-accent);
+			color: var(--davo-primary-dark) !important;
+			border: none;
+			transition: background 0.3s;
+		}
+		.site-footer .site-button:hover {
+			background: var(--davo-secondary-accent);
+			color: var(--davo-light-text) !important;
+		}
+		.site-footer .fa {
+			color: var(--davo-light-text) !important;
+		}
+		.site-footer .fa:hover {
+			color: var(--davo-primary-accent) !important;
+		}
+
+		/* Tab Menu (Header Nav) Styling */
+		.main-bar-wraper, .header-nav, .navbar, .navbar-nav {
+			background: var(--davo-primary-dark) !important;
+		}
+		.header-nav .nav-link, .navbar-nav .nav-link {
+			color: var(--davo-light-text) !important;
+			font-weight: 500;
+			letter-spacing: 1px;
+			transition: color 0.2s, background 0.2s;
+			border-radius: 4px;
+			padding: 8px 18px;
+		}
+		.header-nav .nav-link.active, .header-nav .nav-link:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+			color: var(--davo-primary-dark) !important;
+			background: var(--davo-primary-accent) !important;
+		}
+		.navbar-toggler {
+			border-color: var(--davo-primary-accent);
+		}
+		.navbar-toggler span {
+			background: var(--davo-primary-accent);
+		}
+
+		/* Quick Search Styling */
+		.dlab-quik-search.bg-primary {
+			background: var(--davo-secondary-accent) !important;
+		}
+		.dlab-quik-search input.form-control {
+			background: var(--davo-primary-dark);
+			color: var(--davo-light-text);
+			border: 1px solid var(--davo-primary-accent);
+		}
+		.dlab-quik-search input.form-control::placeholder {
+			color: var(--davo-neutral-gray);
+		}
+		#quik-search-remove i {
+			color: var(--davo-primary-accent);
+		}
+	</style>
+	
+	<!-- REVOLUTION SLIDER CSS -->
+	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
+	
 </head>
-<body>
-  <div class="container">
-    <h1>DAVO DESENVOLVIMENTO DE SOFTWARE LTDA</h1>
+<body id="bg">
+<div id="loading-area">
+	<h1 class="ml5">
+	  <span class="text-wrapper">
+		<span class="line line1"></span>
+		<span class="letters letters-left">LOADING</span>
+		<span class="line line2"></span>
+	  </span>
+	</h1>
+</div>
+<div class="page-wraper">
+	<!-- header -->
+    <header class="site-header header">
+		<!-- main header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
+            <div class="main-bar clearfix onepage">
+                <div class="container clearfix">
+                    <!-- website logo -->
+                    <div class="logo-header mostion">
+						<a href="index.html"><img src="images/logo-black.png" alt=""></a>
+					</div>
+                    <!-- nav toggle button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+                    <!-- Quik search -->
+                    <div class="dlab-quik-search bg-primary ">
+                        <form action="#">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <span id="quik-search-remove"><i class="flaticon-close"></i></span>
+                        </form>
+                    </div>
+                    <!-- main nav -->
+                    <div class="header-nav navbar-collapse collapse navbar myNavbar justify-content-end" id="navbarNavDropdown">
+						<ul class="nav navbar-nav">
+							<li><a href="#home" class="nav-link active scroll">Home</a></li>
+							<li><a href="#about-us" class="nav-link scroll">Sobre</a></li>
+							<li><a href="#services" class="nav-link scroll">Serviços</a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- main header END -->
+    </header>
+    <!-- header END -->
+	<!-- Slider -->
+	<div class="main-slider style-two default-banner" id="home">
+		<div class="tp-banner-container">
+			<div class="tp-banner" >
+				<div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="reveal-add-on36" data-source="gallery" style="background:#ffffff;padding:0px;">
+					<!-- START REVOLUTION SLIDER 5.4.7.2 fullscreen mode -->
+						<div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7.2">
+					<ul>	<!-- SLIDE  -->
+						   <li data-index="rs-100" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+							   <div class="rev-slider-overlay"></div>
+							   <!-- MAIN IMAGE -->
+							   <img src="images/main-slider/dummy.png"  alt=""  data-lazyload="images/main-slider/slide1.jpg" data-bgposition="center center" data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-shape tp-shapewrapper ov-tp " 
+								id="slide-100-layer-1" 
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+								data-width="full"
+								data-height="full"
+								data-whitespace="nowrap"
+								data-type="shape" 
+								data-basealign="slide" 
+								data-responsive_offset="off" 
+								data-responsive="off"
+								data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeIn"}]'
+								data-textAlign="['inherit','inherit','inherit','inherit']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 5;font-family: 'rubik', sans-serif;">
+							</div>
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption " 
+								id="slide-100-layer-3" 
+								data-x="['left','left','left','left']" data-hoffset="['0','0','0','20']" 
+								data-y="['middle','middle','middle','middle']" data-voffset="['-100','-100','-100','-80']" 
+								data-fontsize="['90','40','40','30']"
+								data-lineheight="['100','40','40','30']"
+								data-letterspacing="['2','2','2','2']"
+								data-width="['1000','none','768','360']"
+								data-height="none"
+								data-whitespace="['normal','nowrap','normal','normal']"
+								data-type="text" 
+								data-responsive_offset="off" 
+								data-responsive="off"
+								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[10,10,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 700; white-space: normal; color: #fff; font-family: 'Barlow Condensed',sans-serif;">           
+								Soluções Mobile <br/>Rápidas e Confiáveis
 
-    <div class="card">
-      <p class="label">Organization</p>
-      <p>DAVO DESENVOLVIMENTO DE SOFTWARE LTDA</p>
+							</div>
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption  " 
+								id="slide-100-layer-4" 
+								data-x="['left','left','left','left']" data-hoffset="['0','0','0','20']" 
+								data-y="['middle','middle','middle','middle']" data-voffset="['50','50','-5','00']" 
+								data-fontsize="['18','18','18','14']"
+								data-lineheight="['30','30','25','22']"
+								data-width="['640','481','500','300']"
+								data-height="none"
+								data-whitespace="normal"
+					 
+								data-type="text" 
+								data-responsive_offset="off" 
+								data-responsive="off"
+								data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+								style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Barlow Condensed',sans-serif;"><br/><br/><br/>Transformamos ideias em aplicativos de alta performance para empresas que querem crescer no digital.<br/>📱 Mais de 5 anos de mercado<br/>🚀 +10 soluções mobile desenvolvidas<br/>💼 Aplicativos sob medida para o seu negócio
+							</div>
+						</li>
+					</ul>
+					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+				</div><!-- END REVOLUTION SLIDER -->     
+			</div>        
+		</div>        
+	</div>        
+	<!-- Slider END -->
+	<!-- Page Content -->
+	<div class="page-content">
+	<!-- About US -->
+<div class="section-full content-inner bg-white services-box" id="about-us">
+	<div class="container">
+		<div class="row dzseth margin-0">
+			<div class="col-lg-6 col-md-12 d-flex">
+				<img class="align-self-center" src="images/services-contact-img.jpg" alt="Davo Company - Desenvolvimento Mobile">
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<div class="services-content">
+					<div class="max-w700 m-auto">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="section-head">
+									<h2 class="title">Performance e Inovação</h2>
+									<p>
+										Atuamos desde o planejamento até a publicação, garantindo qualidade, escalabilidade e alto desempenho.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<ul class="services-list m-b0">
+									<li>
+										<div class="icon-cell icon-lg m-b15">
+											<i class="flaticon-smartphone text-secondry"></i>
+										</div>		
+										<div class="icon-content">
+											<h5 class="dlab-tilte font-weight-700 text-primary text-capitalize">
+												Soluções Nativas Android e iOS
+											</h5>
+											<p>
+												Desenvolvemos aplicativos nativos com foco em performance, estabilidade e 
+												experiência do usuário.
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="icon-cell icon-lg m-b15">
+											<i class="flaticon-technology text-secondry"></i>
+										</div>
+										<div class="icon-content">
+											<h5 class="dlab-tilte font-weight-700 text-primary text-capitalize">
+												IA Integrada ao Desenvolvimento
+											</h5>
+											<p>
+												Utilizamos Inteligência Artificial como apoio no processo de codificação, 
+												análise e otimização, aumentando a produtividade, reduzindo erros e 
+												acelerando a entrega sem comprometer a qualidade do projeto.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- About Us END -->
 
-      <p class="label">Description</p>
-      <p>
-        We develop and operate mobile applications and digital services for
-        consumer and business users.
-      </p>
-
-      <p class="label">Contact Email</p>
-      <p>davizardb@gmail.com</p>
-    </div>
-
-    <footer>
-      © 2026 DAVO DESENVOLVIMENTO DE SOFTWARE LTDA. All rights reserved.
+		<!-- Our Services -->
+		<div class="section-full content-inner bg-img-fix" id="services" style="background-image: url(images/background/bg1.jpg); background-size: cover;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper feature-box text-center bg-white radius-sm">
+							<div class="icon-cell icon-lg m-b15">
+								<i class="flaticon-battery text-secondry"></i>
+							</div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-primary">Battery Repair</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing typesetting industry standard.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper feature-box text-center bg-white radius-sm">
+							<div class="icon-cell icon-lg m-b15">
+								<i class="flaticon-green-energy text-secondry"></i>
+							</div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-primary">Installations</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing typesetting industry standard.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper feature-box text-center bg-white radius-sm">
+							<div class="icon-cell icon-lg m-b15">
+								<i class="flaticon-air-conditioner text-secondry"></i>
+							</div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-primary">Electricial Safety</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing typesetting industry standard.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper feature-box text-center bg-white radius-sm">
+							<div class="icon-cell icon-lg m-b15">
+								<i class="flaticon-electric-fryer text-secondry"></i>
+							</div>
+							<div class="icon-content">
+								<h5 class="dlab-tilte text-primary">Electric Fryer</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing typesetting industry standard.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Our Services End -->		
+	</div>
+	<!-- Page Content End -->
+	<!-- Footer -->
+    <footer class="site-footer">
+		<div class="footer-top">
+			<div class="container">
+			   <div class="row">
+				   <div class="col-md-12 col-xl-5 col-lg-4 col-sm-8 footer-col-4">
+						<div class="widget">
+							<div class="footer-logo">
+							   <img src="images/logo.png" alt="">
+						   </div>
+						   <p class="text-capitalize m-b20">Davo Company é uma empresa especializada no desenvolvimento de soluções mobile, com sólida experiência na criação de mais de 10 aplicativos para diferentes segmentos do mercado.</p>
+						</div>
+					</div>
+				   <div class="col-md-3 col-5 col-xl-2 col-lg-2 col-sm-4 footer-col-4">
+						<div class="widget widget_services border-0">
+							<h4 class="m-b30 text-white">Empresa</h4>
+							<ul>
+								<li><a href="#about-us">Sobre </a></li>
+								<li><a href="#home">Home </a></li>
+								<li><a href="#services">Serviços</a></li>
+							</ul>
+						</div>
+					</div>
+				   <div class="col-md-6 col-xl-3 col-lg-3 col-sm-6 footer-col-4">
+						<div class="widget widget_getintuch">
+							<h4 class="m-b30 text-white ">Contato</h4>
+							<ul>
+								<li><i class="ti-location-pin"></i><strong>endereço</strong> R SETE DE ABRIL #8901 264, ANDAR 04 SALA 409, CENTRO, SÃO PAULO </li>
+								<li><i class="ti-mobile"></i><strong>telefone</strong>+55 85 985712316 (WPP)</li>
+							   <li><i class="ti-email"></i><strong>email</strong>davizard@davo-company.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- Footer Bottom part -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+					<div class="col-12 text-center"> <span>Copyright © 2026 DAVO DESENVOLVIMENTO DE SOFTWARE LTDA</span> </div>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div>
+    <!-- Footer END-->
+</div>
+<button class="scroltop fa fa-arrow-up" ></button>
+<!-- JavaScript  files ========================================= -->
+<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/wow/wow.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
+<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+<script src="plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- MASONRY  -->
+<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY  -->
+<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY  -->
+<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL  SLIDER  -->
+<script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
+<script src="plugins/loading/anime.js"></script><!-- LOADING JS -->
+<script src="plugins/loading/anime-app.js"></script><!-- LOADING JS -->
+<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="plugins/loading/anime.js"></script><!-- Tilt Jquery -->
+<script src="plugins/loading/anime-app4.js"></script><!-- Tilt Jquery -->
+<script src='https://www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
+<script src="js/dz.ajax.js"></script><!-- Contact Us -->
+
+<!-- REVOLUTION JS FILES -->
+<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script  src="js/rev.slider.js"></script>
+<script>
+jQuery(document).ready(function() {
+	'use strict';
+	dz_rev_slider_1();
+});	/*ready*/
+</script>
+
 </body>
 </html>

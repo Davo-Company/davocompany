@@ -33,6 +33,153 @@
 	<link  rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css">
 	<link class="skin"  rel="stylesheet" type="text/css" href="css/skin/skin.css">
 	<link  rel="stylesheet" type="text/css" href="css/templete.css">
+	<style>
+			.site-footer .footer-bottom {
+				background-color: var(--davo-primary-dark) !important;
+			}
+			/* Main Bar and Logo Header Styling */
+			.main-bar {
+				background: var(--davo-primary-dark) !important;
+				border-bottom: 2px solid var(--davo-primary-accent);
+				box-shadow: 0 2px 12px 0 rgba(0,60,60,0.08);
+			}
+			.main-bar .container {
+				background: transparent !important;
+			}
+			.logo-header {
+				background: transparent !important;
+				padding: 6px 0;
+			}
+			.logo-header img {
+				max-height: 54px;
+				filter: drop-shadow(0 2px 8px var(--davo-primary-accent));
+				background: var(--davo-primary-dark);
+				border-radius: 8px;
+				padding: 4px 10px;
+			}
+			/* Navbar Toggler (Hamburger) */
+			.navbar-toggler {
+				border: 2px solid var(--davo-primary-accent);
+				background: var(--davo-primary-dark);
+				border-radius: 6px;
+			}
+			.navbar-toggler span {
+				background: var(--davo-primary-accent) !important;
+			}
+			/* Quick Search Area */
+			.dlab-quik-search.bg-primary {
+				background: var(--davo-secondary-accent) !important;
+				border-radius: 8px;
+				box-shadow: 0 2px 8px 0 rgba(31,199,166,0.10);
+			}
+			.dlab-quik-search input.form-control {
+				background: var(--davo-primary-dark);
+				color: var(--davo-light-text);
+				border: 1px solid var(--davo-primary-accent);
+				border-radius: 4px;
+			}
+			.dlab-quik-search input.form-control::placeholder {
+				color: var(--davo-neutral-gray);
+			}
+			#quik-search-remove i, .flaticon-close {
+				color: var(--davo-primary-accent) !important;
+				font-size: 1.2em;
+				transition: color 0.2s;
+			}
+			#quik-search-remove i:hover, .flaticon-close:hover {
+				color: var(--davo-light-text) !important;
+			}
+		/* Davo Company Color Palette */
+		:root {
+			--davo-primary-dark: #003C3C;
+			--davo-primary-accent: #1FC7A6;
+			--davo-secondary-accent: #178F85;
+			--davo-light-text: #E6F2F1;
+			--davo-neutral-gray: #C9D3D3;
+		}
+
+		/* Footer Styling */
+		footer.site-footer, .footer-top {
+			background: linear-gradient(135deg, var(--davo-primary-dark), var(--davo-primary-accent));
+			color: var(--davo-light-text);
+		}
+		.footer-top h4, .footer-top .widget, .footer-top .widget a, .footer-top .widget_getintuch ul li, .footer-top .widget_services ul li a {
+			color: var(--davo-light-text) !important;
+		}
+		.footer-top .widget_services ul li a:hover {
+			color: var(--davo-primary-accent) !important;
+		}
+		.footer-logo img {
+			filter: drop-shadow(0 2px 8px var(--davo-primary-accent));
+		}
+		.footer-bottom {
+			background: var(--davo-primary-dark);
+			color: var(--davo-neutral-gray);
+			border-top: 1px solid var(--davo-secondary-accent);
+			text-align: center;
+			padding: 18px 0 12px 0;
+		}
+		.footer-bottom span {
+			color: var(--davo-neutral-gray);
+			font-size: 1.05em;
+			letter-spacing: 0.5px;
+		}
+		.site-footer .site-button {
+			background: var(--davo-primary-accent);
+			color: var(--davo-primary-dark) !important;
+			border: none;
+			transition: background 0.3s;
+		}
+		.site-footer .site-button:hover {
+			background: var(--davo-secondary-accent);
+			color: var(--davo-light-text) !important;
+		}
+		.site-footer .fa {
+			color: var(--davo-light-text) !important;
+		}
+		.site-footer .fa:hover {
+			color: var(--davo-primary-accent) !important;
+		}
+
+		/* Tab Menu (Header Nav) Styling */
+		.main-bar-wraper, .header-nav, .navbar, .navbar-nav {
+			background: var(--davo-primary-dark) !important;
+		}
+		.header-nav .nav-link, .navbar-nav .nav-link {
+			color: var(--davo-light-text) !important;
+			font-weight: 500;
+			letter-spacing: 1px;
+			transition: color 0.2s, background 0.2s;
+			border-radius: 4px;
+			padding: 8px 18px;
+		}
+		.header-nav .nav-link.active, .header-nav .nav-link:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+			color: var(--davo-primary-dark) !important;
+			background: var(--davo-primary-accent) !important;
+		}
+		.navbar-toggler {
+			border-color: var(--davo-primary-accent);
+		}
+		.navbar-toggler span {
+			background: var(--davo-primary-accent);
+		}
+
+		/* Quick Search Styling */
+		.dlab-quik-search.bg-primary {
+			background: var(--davo-secondary-accent) !important;
+		}
+		.dlab-quik-search input.form-control {
+			background: var(--davo-primary-dark);
+			color: var(--davo-light-text);
+			border: 1px solid var(--davo-primary-accent);
+		}
+		.dlab-quik-search input.form-control::placeholder {
+			color: var(--davo-neutral-gray);
+		}
+		#quik-search-remove i {
+			color: var(--davo-primary-accent);
+		}
+	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
@@ -75,9 +222,6 @@
 							<li><a href="#home" class="nav-link active scroll">Home</a></li>
 							<li><a href="#about-us" class="nav-link scroll">About</a></li>
 							<li><a href="#services" class="nav-link scroll">Services</a></li>
-							<li><a href="#appointment" class="nav-link scroll">Appointment</a></li>
-							<li><a href="#testimonials" class="nav-link scroll">Testimonials</a></li>
-							<li><a href="#news" class="nav-link scroll">Blog</a></li>
 						</ul>
 					</div>
                 </div>
@@ -430,318 +574,49 @@
 			</div>
 		</div>
 		<!-- Our Services End -->		
-		<!-- Appointment -->
-		<div class="section-full content-inner-1 bg-white" id="appointment">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<img class="appointment-img" src="images/service-man.jpg" alt="">
-					</div>
-					<div class="col-lg-7">
-						<div class="appointment-form">
-							<div class="section-head">
-								<h2 class="title">shedule appointment</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since when an unknown printer took.</p>
-							</div>
-							<form>
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Phone">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<textarea class="form-control" placeholder="How Can We Help You?"></textarea>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<button class="site-button">Submit</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Appointment End -->
-		<!-- Our Counter -->
-		<div class="section-full content-inner bg-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-t10 m-b20">
-						<div class="counter-style-5 text-left">
-							<h2 class="counter-number">43</h2>
-							<h2 class="counter">43</h2>
-							<span class="counter-text text-capitalize text-secondry">graduted from here</span>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-t10 m-b20">
-						<div class="counter-style-5 text-left">
-							<h2 class="counter-number">23</h2>
-							<h2 class="counter">23</h2>
-							<span class="counter-text text-capitalize text-secondry">teachers number</span>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-t10 m-b20">
-						<div class="counter-style-5 text-left">
-							<h2 class="counter-number">45</h2>
-							<h2 class="counter">45</h2>
-							<span class="counter-text text-capitalize text-secondry">years on market</span>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-t10 m-b20">
-						<div class="counter-style-5 text-left">
-							<h2 class="counter-number">26</h2>
-							<h2 class="counter">26</h2>
-							<span class="counter-text text-capitalize text-secondry">present students</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Our Counter End -->		
-		<!-- Testimonials -->
-		<div class="section-full content-inner bg-white" id="testimonials">
-			<div class="container">
-				<div class="section-head text-center">
-					<h2 class="title">Happy Clients</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since when an unknown printer took.</p>
-				</div>
-				<div class="testimonial-two owl-carousel owl-btn-3 owl-theme owl-btn-center-lr owl-dots-none">
-					<div class="item">
-						<div class="testimonial-box m-b30">
-							<div class="testimonial-content">
-								<div class="quote-left"></div>
-								<p>There are many variations of passages of Lorem Ipsum typesetting industry Lorem Ipsum has been the industry.</p>
-								<div class="quote-right"></div>
-								<div class="testimonial-detail"> 
-									<strong class="testimonial-name">Taylor Hand</strong> 
-									<span class="testimonial-position">IT Support</span> 
-								</div>
-							</div>
-							<div class="testimonial-img">
-								<img src="images/our-team/pic1.jpg" alt="">
-							</div>
-						</div>
-						<div class="testimonial-box">
-							<div class="testimonial-img">
-								<img src="images/our-team/pic1.jpg" alt="">
-							</div>
-							<div class="testimonial-content">
-								<div class="quote-left"></div>
-								<p>There are many variations of passages of Lorem Ipsum typesetting industry Lorem Ipsum has been the industry.</p>
-								<div class="quote-right"></div>
-								<div class="testimonial-detail"> 
-									<strong class="testimonial-name">Taylor Hand</strong> 
-									<span class="testimonial-position">IT Support</span> 
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonial-box m-b30">
-							<div class="testimonial-content">
-								<div class="quote-left"></div>
-								<p>There are many variations of passages of Lorem Ipsum typesetting industry Lorem Ipsum has been the industry.</p>
-								<div class="quote-right"></div>
-								<div class="testimonial-detail"> 
-									<strong class="testimonial-name">Taylor Hand</strong> 
-									<span class="testimonial-position">IT Support</span> 
-								</div>
-							</div>
-							<div class="testimonial-img">
-								<img src="images/our-team/pic2.jpg" alt="">
-							</div>
-						</div>
-						<div class="testimonial-box">
-							<div class="testimonial-img">
-								<img src="images/our-team/pic2.jpg" alt="">
-							</div>
-							<div class="testimonial-content">
-								<div class="quote-left"></div>
-								<p>There are many variations of passages of Lorem Ipsum typesetting industry Lorem Ipsum has been the industry.</p>
-								<div class="quote-right"></div>
-								<div class="testimonial-detail"> 
-									<strong class="testimonial-name">Taylor Hand</strong> 
-									<span class="testimonial-position">IT Support</span> 
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testimonial-box m-b30">
-							<div class="testimonial-content">
-								<div class="quote-left"></div>
-								<p>There are many variations of passages of Lorem Ipsum typesetting industry Lorem Ipsum has been the industry.</p>
-								<div class="quote-right"></div>
-								<div class="testimonial-detail"> 
-									<strong class="testimonial-name">Taylor Hand</strong> 
-									<span class="testimonial-position">IT Support</span> 
-								</div>
-							</div>
-							<div class="testimonial-img">
-								<img src="images/our-team/pic3.jpg" alt="">
-							</div>
-						</div>
-						<div class="testimonial-box">
-							<div class="testimonial-img">
-								<img src="images/our-team/pic3.jpg" alt="">
-							</div>
-							<div class="testimonial-content">
-								<div class="quote-left"></div>
-								<p>There are many variations of passages of Lorem Ipsum typesetting industry Lorem Ipsum has been the industry.</p>
-								<div class="quote-right"></div>
-								<div class="testimonial-detail"> 
-									<strong class="testimonial-name">Taylor Hand</strong> 
-									<span class="testimonial-position">IT Support</span> 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Testimonials End -->
-		<!-- Blog -->
-		<div class="section-full bg-gray content-inner" id="news">
-			<div class="container">
-				<div class="section-head text-center">
-					<h2 class="title">News Feeds?</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since when an unknown printer took.</p>
-				</div>
-				<div class="blog-carousel owl-carousel owl-btn-3 owl-theme owl-btn-center-lr owl-dots-none">
-					<div class="item">
-						<div class="blog-post bg-white blog-grid blog-rounded blog-effect1">
-							<div class="dlab-post-media dlab-img-effect"> 
-								<a href="#"><img src="images/blog/pic1.jpg" alt=""></a> 
-							</div>
-							<div class="dlab-info p-a20 border-1">
-								<div class="dlab-post-title ">
-									<h4 class="post-title"><a href="#">Title of first blog post</a></h4>
-								</div>
-								<div class="dlab-post-meta ">
-									<ul>
-										<li class="post-date"> <i class="ti-calendar"></i><strong>10 Aug</strong> <span> 2020</span> </li>
-										<li class="post-author"><i class="ti-user"></i>By <a href="#">Jone</a> </li>
-										<li class="post-comment"><i class="ti-comment-alt"></i> <a href="#">5k</a> </li>
-									</ul>
-								</div>
-								<div class="dlab-post-text">
-								   <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="blog-post bg-white blog-grid blog-rounded blog-effect1">
-							<div class="dlab-post-media dlab-img-effect"> 
-								<a href="#"><img src="images/blog/pic2.jpg" alt=""></a> 
-							</div>
-							<div class="dlab-info p-a20 border-1">
-								<div class="dlab-post-title ">
-									<h4 class="post-title"><a href="#">Title of first blog post</a></h4>
-								</div>
-								<div class="dlab-post-meta ">
-									<ul>
-										<li class="post-date"> <i class="ti-calendar"></i><strong>10 Aug</strong> <span> 2020</span> </li>
-										<li class="post-author"><i class="ti-user"></i>By <a href="#">Jone</a> </li>
-										<li class="post-comment"><i class="ti-comment-alt"></i> <a href="#">5k</a> </li>
-									</ul>
-								</div>
-								<div class="dlab-post-text">
-								   <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="blog-post bg-white blog-grid blog-rounded blog-effect1">
-							<div class="dlab-post-media dlab-img-effect"> 
-								<a href="#"><img src="images/blog/pic3.jpg" alt=""></a> 
-							</div>
-							<div class="dlab-info p-a20 border-1">
-								<div class="dlab-post-title ">
-									<h4 class="post-title"><a href="#">Title of first blog post</a></h4>
-								</div>
-								<div class="dlab-post-meta ">
-									<ul>
-										<li class="post-date"> <i class="ti-calendar"></i><strong>10 Aug</strong> <span> 2020</span> </li>
-										<li class="post-author"><i class="ti-user"></i>By <a href="#">Jone</a> </li>
-										<li class="post-comment"><i class="ti-comment-alt"></i> <a href="#">5k</a> </li>
-									</ul>
-								</div>
-								<div class="dlab-post-text">
-								   <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Blog End -->
 	</div>
 	<!-- Page Content End -->
 	<!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-top">
-            <div class="container">
-				<div class="row">
-					<div class="col-md-12 col-xl-5 col-lg-4 col-sm-8 footer-col-4">
-                        <div class="widget">
-                            <div class="footer-logo">
-								<img src="images/logo.png" alt="">
-							</div>
-							<p class="text-capitalize m-b20">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the..</p>
-							<ul class="list-inline m-a0">
-								<li><a href="javascript:void(0);" class="site-button facebook circle "><i class="fa text-white fa-facebook"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button google-plus circle "><i class="fa text-white fa-google-plus"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button linkedin circle "><i class="fa text-white fa-linkedin"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button instagram circle "><i class="fa text-white fa-instagram"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button twitter circle "><i class="fa text-white fa-twitter"></i></a></li>
+		<div class="footer-top">
+			<div class="container">
+			   <div class="row">
+				   <div class="col-md-12 col-xl-5 col-lg-4 col-sm-8 footer-col-4">
+						<div class="widget">
+							<div class="footer-logo">
+							   <img src="images/logo.png" alt="">
+						   </div>
+						   <p class="text-capitalize m-b20">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the..</p>
+						</div>
+					</div>
+				   <div class="col-md-3 col-5 col-xl-2 col-lg-2 col-sm-4 footer-col-4">
+						<div class="widget widget_services border-0">
+							<h4 class="m-b30 text-white">Company</h4>
+							<ul>
+								<li><a href="#about-us">About Us </a></li>
+								<li><a href="#home">Home </a></li>
+								<li><a href="#services">Our Services</a></li>
 							</ul>
-                        </div>
-                    </div>
-					<div class="col-md-3 col-5 col-xl-2 col-lg-2 col-sm-4 footer-col-4">
-                        <div class="widget widget_services border-0">
-                            <h4 class="m-b30 text-white">Company</h4>
-                            <ul>
-                                <li><a href="#about-us">About Us </a></li>
-                                <li><a href="#home">Home </a></li>
-                                <li><a href="#services">Our Services</a></li>
-                            </ul>
-                        </div>
-                    </div>
-					<div class="col-md-6 col-xl-3 col-lg-3 col-sm-6 footer-col-4">
-                        <div class="widget widget_getintuch">
-                            <h4 class="m-b30 text-white ">Contact us</h4>
-                            <ul>
-                                <li><i class="ti-location-pin"></i><strong>address</strong> demo address #8901 Marmora Road Chi Minh City, Vietnam </li>
-                                <li><i class="ti-mobile"></i><strong>phone</strong>0800-123456 (24/7 Support Line)</li>
-								<li><i class="ti-email"></i><strong>email</strong>info@example.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+						</div>
+					</div>
+				   <div class="col-md-6 col-xl-3 col-lg-3 col-sm-6 footer-col-4">
+						<div class="widget widget_getintuch">
+							<h4 class="m-b30 text-white ">Contact us</h4>
+							<ul>
+								<li><i class="ti-location-pin"></i><strong>address</strong> demo address #8901 Marmora Road Chi Minh City, Vietnam </li>
+								<li><i class="ti-mobile"></i><strong>phone</strong>0800-123456 (24/7 Support Line)</li>
+							   <li><i class="ti-email"></i><strong>email</strong>info@example.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         <!-- Footer Bottom part -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2020 DexignLab</span> </div>
+					<div class="col-12 text-center"> <span>Copyright © 2020 DexignLab</span> </div>
                 </div>
             </div>
         </div>

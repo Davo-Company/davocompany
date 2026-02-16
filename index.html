@@ -34,53 +34,56 @@
 	<link class="skin"  rel="stylesheet" type="text/css" href="css/skin/skin.css">
 	<link  rel="stylesheet" type="text/css" href="css/templete.css">
 	<style>
-											/* Themed Green for Scroll Top Arrow */
-											.scroltop .fa-arrow-up {
-												color: var(--davo-primary-accent) !important;
-											}
-									/* Themed Green for Titles and Primary Text */
-									.dlab-tilte,
-									.text-primary,
-									.dlab-tilte.text-primary {
-										color: var(--davo-primary-accent) !important;
-									}
-							/* Slider Overlay Shadow and Blur for Text Visibility */
-							.rev-slider-overlay {
-								position: absolute;
-								top: 0;
-								left: 0;
-								width: 100%;
-								height: 100%;
-								z-index: 2;
-								pointer-events: none;
-								background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
-								box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
-								backdrop-filter: blur(2.5px);
-								-webkit-backdrop-filter: blur(2.5px);
-								border-radius: 0;
-							}
-							.rev_slider li {
-								position: relative;
-							}
-					/* Slider Overlay Shadow and Blur for Text Visibility (image only) */
-					.rev_slider .rev-slidebg {
-						position: relative;
-					}
-					.rev_slider .rev-slidebg::after {
-						content: '';
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						z-index: 2;
-						pointer-events: none;
-						background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
-						box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
-						backdrop-filter: blur(2.5px);
-						-webkit-backdrop-filter: blur(2.5px);
-						border-radius: 0;
-					}
+			/* Themed Green for Scroll Top Arrow */
+			.scroltop .fa-arrow-up {
+				color: var(--davo-primary-accent) !important;
+			}
+			/* Themed Green for Titles and Primary Text */
+			.dlab-tilte,
+			.text-primary,
+			.dlab-tilte.text-primary {
+				color: var(--davo-primary-accent) !important;
+			}
+			/* Slider Overlay Shadow and Blur for Text Visibility */
+			.rev-slider-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				pointer-events: none;
+				background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
+				box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+				backdrop-filter: blur(2.5px);
+				-webkit-backdrop-filter: blur(2.5px);
+				border-radius: 0;
+			}
+			.rev_slider li {
+				position: relative;
+			}
+			.tparrows {
+				display: none !important;	
+			}	
+			/* Slider Overlay Shadow and Blur for Text Visibility (image only) */
+			.rev_slider .rev-slidebg {
+				position: relative;
+			}
+			.rev_slider .rev-slidebg::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				pointer-events: none;
+				background: linear-gradient(180deg, rgba(0,28,28,0.55) 0%, rgba(0,28,28,0.45) 100%);
+				box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+				backdrop-filter: blur(2.5px);
+				-webkit-backdrop-filter: blur(2.5px);
+				border-radius: 0;
+			}
 			.site-footer .footer-bottom {
 				background-color: var(--davo-primary-dark) !important;
 			}
@@ -451,17 +454,18 @@
 			<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 				<div class="icon-bx-wraper feature-box text-center bg-white radius-sm">
 					<div class="icon-cell icon-lg m-b15">
-						<i class="flaticon-notebook text-secondry"></i>
+						<i class="flaticon-computer text-secondry"></i>
 					</div>
 					<div class="icon-content">
-						<h5 class="dlab-tilte text-primary">Avaliação Técnica & Consultoria</h5>
+						<h5 class="dlab-tilte text-primary">Projetos sob Confidencialidade</h5>
 						<p>
-							Realizamos análises completas de arquitetura, performance e código, 
-							oferecendo consultoria estratégica para evolução do seu aplicativo.
+							Desenvolvemos soluções estratégicas sob acordo de confidencialidade (NDA), 
+							garantindo sigilo técnico e proteção total das informações do cliente.
 						</p>
 					</div>
 				</div>
 			</div>
+
 
 			<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 				<div class="icon-bx-wraper feature-box text-center bg-white radius-sm">
